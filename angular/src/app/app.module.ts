@@ -27,6 +27,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+    //We use useHAsh because we don't want that our angular routes to mess with our api routes
     RouterModule.forRoot(appRoutes, {useHash: true}),
     HttpClientModule
   ],
